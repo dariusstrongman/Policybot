@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /success.html
+Sitemap: https://policy.stromation.com/sitemap.xml
