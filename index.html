@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6Z6XV02RT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-B6Z6XV02RT');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PolicyBot — Privacy Policy & Terms of Service in 60 Seconds</title>
+<meta name="description" content="Generate a privacy policy and terms of service for your app or website. Answer 8 questions, pay $9, get both documents instantly. No subscription.">
+<meta name="theme-color" content="#4F46E5">
+<link rel="canonical" href="https://policy.stromation.com/">
+<meta property="og:title" content="PolicyBot — Privacy Policy & Terms of Service Generator">
+<meta property="og:description" content="Answer 8 questions. Pay $9. Get a privacy policy and terms of service instantly. No subscription, no lawyer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://policy.stromation.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@stromationhq">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#FFFFFF;--bg2:#F8FAFB;--bg3:#F1F5F9;
+--indigo:#4F46E5;--indigo-light:#EEF2FF;--indigo-hover:#4338CA;--indigo-glow:rgba(79,70,229,.12);
+--emerald:#059669;--emerald-light:#ECFDF5;
+--text:#111827;--text2:#4B5563;--text3:#9CA3AF;
+--border:#E5E7EB;--border2:#D1D5DB;
+--serif:'Instrument Serif',Georgia,serif;
+--sans:'Source Sans 3',system-ui,sans-serif;
+--radius:10px;--shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--shadow-lg:0 10px 25px rgba(0,0,0,.06),0 4px 10px rgba(0,0,0,.04)
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--indigo);color:#fff}
+.w{max-width:1060px;margin:0 auto;padding:0 1.5rem}
+
+/* NAV */
+nav{padding:.75rem 0;border-bottom:1px solid var(--border);background:rgba(255,255,255,.95);backdrop-filter:blur(12px);position:sticky;top:0;z-index:50}
+nav .w{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:.5rem;font-family:var(--serif);font-size:1.4rem;color:var(--text);text-decoration:none}
+.nav-logo svg{width:24px;height:24px;color:var(--indigo)}
+.nav-r{display:flex;align-items:center;gap:1.75rem}
+.nav-r a{font-size:.88rem;color:var(--text2);text-decoration:none;font-weight:500;transition:color .2s}
+.nav-r a:hover{color:var(--indigo)}
+.nav-cta{background:var(--indigo);color:#fff !important;padding:.5rem 1.15rem;border-radius:8px;font-weight:600;font-size:.85rem;transition:all .2s}
+.nav-cta:hover{background:var(--indigo-hover);box-shadow:0 4px 12px var(--indigo-glow)}
+
+/* HERO */
+.hero{padding:5rem 0 4rem;text-align:center}
+.hero h1{font-family:var(--serif);font-size:3.2rem;font-weight:400;line-height:1.15;margin-bottom:1rem;color:var(--text);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--indigo)}
+.hero p{font-size:1.15rem;color:var(--text2);max-width:520px;margin:0 auto 2rem}
+.hero-cta{display:inline-block;background:var(--indigo);color:#fff;padding:.9rem 2.25rem;border-radius:var(--radius);font-weight:700;font-size:1.05rem;text-decoration:none;transition:all .2s;border:none;cursor:pointer}
+.hero-cta:hover{background:var(--indigo-hover);box-shadow:0 6px 20px var(--indigo-glow);transform:translateY(-1px)}
+.hero-note{font-size:.82rem;color:var(--text3);margin-top:1rem}
+.trust-badges{display:flex;justify-content:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.trust-badge{display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--text2);font-weight:500}
+.trust-badge svg{width:16px;height:16px;color:var(--emerald)}
+
+/* SECTION */
+.sec{padding:4.5rem 0}
+.sec-alt{background:var(--bg2)}
+.sec-label{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--indigo);font-weight:700;margin-bottom:.5rem}
+.sec-h{font-family:var(--serif);font-size:2.2rem;font-weight:400;line-height:1.2;margin-bottom:.5rem;letter-spacing:-.01em}
+.sec-sub{font-size:1rem;color:var(--text2);margin-bottom:2.5rem;max-width:480px}
+.sec-center{text-align:center}
+.sec-center .sec-sub{margin-left:auto;margin-right:auto}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative}
+.steps::before{content:"";position:absolute;top:32px;left:calc(16.67% + 1rem);right:calc(16.67% + 1rem);height:1px;background:var(--border2);z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:64px;height:64px;border-radius:50%;background:var(--indigo-light);color:var(--indigo);font-family:var(--serif);font-size:1.5rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;border:2px solid var(--indigo);transition:all .3s}
+.step:hover .step-num{background:var(--indigo);color:#fff}
+.step h3{font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
+.step p{font-size:.88rem;color:var(--text2);max-width:240px;margin:0 auto}
+
+/* WHAT YOU GET */
+.doc-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.doc-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);transition:all .25s}
+.doc-card:hover{border-color:var(--indigo);box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.doc-card-head{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
+.doc-card-head svg{width:32px;height:32px;color:var(--indigo)}
+.doc-card h3{font-family:var(--serif);font-size:1.35rem}
+.doc-card p{font-size:.9rem;color:var(--text2);margin-bottom:1rem}
+.doc-card ul{list-style:none}
+.doc-card li{font-size:.88rem;color:var(--text2);padding:.3rem 0 .3rem 1.4rem;position:relative}
+.doc-card li::before{content:"";position:absolute;left:0;top:.6rem;width:8px;height:8px;border-radius:50%;background:var(--emerald)}
+
+/* FORM */
+.form-section{background:var(--bg2);padding:4.5rem 0}
+.form-wrap{max-width:640px;margin:0 auto}
+.form-group{margin-bottom:1.5rem}
+.form-group label{display:block;font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.form-group .hint{font-size:.78rem;color:var(--text3);margin-bottom:.4rem}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="url"],
+.form-group select{width:100%;padding:.7rem .9rem;border:1px solid var(--border2);border-radius:8px;font-family:var(--sans);font-size:.92rem;color:var(--text);background:#fff;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 3px var(--indigo-glow)}
+.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239CA3AF' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .75rem center;padding-right:2rem}
+.checkbox-grid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem}
+.checkbox-grid label{display:flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--text);font-weight:400;cursor:pointer;padding:.3rem .4rem;border-radius:6px;transition:background .15s}
+.checkbox-grid label:hover{background:var(--indigo-light)}
+.checkbox-grid input[type="checkbox"]{accent-color:var(--indigo);width:16px;height:16px}
+.radio-row{display:flex;gap:1rem}
+.radio-row label{display:flex;align-items:center;gap:.4rem;font-size:.92rem;cursor:pointer;padding:.4rem .75rem;border:1px solid var(--border2);border-radius:8px;transition:all .2s}
+.radio-row label:hover{border-color:var(--indigo)}
+.radio-row input[type="radio"]{accent-color:var(--indigo)}
+.radio-row input:checked + span{color:var(--indigo);font-weight:600}
+.form-divider{height:1px;background:var(--border);margin:2rem 0}
+.form-submit{width:100%;padding:.9rem;background:var(--indigo);color:#fff;border:none;border-radius:var(--radius);font-family:var(--sans);font-weight:700;font-size:1.05rem;cursor:pointer;transition:all .2s}
+.form-submit:hover{background:var(--indigo-hover);box-shadow:0 6px 20px var(--indigo-glow)}
+.form-submit:disabled{opacity:.5;cursor:not-allowed}
+.form-secure{text-align:center;font-size:.78rem;color:var(--text3);margin-top:.75rem;display:flex;align-items:center;justify-content:center;gap:.3rem}
+.form-secure svg{width:14px;height:14px}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+
+/* PRICING */
+.price-box{max-width:440px;margin:0 auto;background:#fff;border:2px solid var(--indigo);border-radius:var(--radius);padding:2.5rem;text-align:center;box-shadow:var(--shadow-lg);position:relative}
+.price-box::before{content:"ONE-TIME";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--indigo);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:2px;padding:3px 14px;border-radius:4px}
+.price-amount{font-family:var(--serif);font-size:4rem;color:var(--text);margin:.75rem 0 .25rem}
+.price-amount sup{font-size:1.5rem;vertical-align:super;color:var(--text2)}
+.price-desc{font-size:.95rem;color:var(--text2);margin-bottom:1.5rem}
+.price-box ul{list-style:none;text-align:left;margin-bottom:1.5rem}
+.price-box li{font-size:.9rem;color:var(--text);padding:.4rem 0 .4rem 1.6rem;position:relative}
+.price-box li::before{content:"✓";position:absolute;left:0;color:var(--emerald);font-weight:700}
+.price-compare{font-size:.82rem;color:var(--text3);margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border)}
+
+/* FAQ */
+.faq-list{max-width:640px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.1rem 2rem 1.1rem 0;font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--text);cursor:pointer;position:relative;transition:color .2s}
+.faq-q::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--text3);font-weight:400;transition:transform .3s}
+.faq-item.active .faq-q{color:var(--indigo)}
+.faq-item.active .faq-q::after{transform:translateY(-50%) rotate(45deg);color:var(--indigo)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-inner{padding:0 0 1.25rem;font-size:.92rem;color:var(--text2);line-height:1.7}
+.faq-item.active .faq-a{max-height:200px}
+
+/* FINAL CTA */
+.final-cta{text-align:center;padding:5rem 0;background:var(--indigo-light)}
+.final-cta h2{font-family:var(--serif);font-size:2rem;margin-bottom:.5rem}
+.final-cta p{color:var(--text2);margin-bottom:1.5rem}
+
+/* FOOTER */
+footer{padding:2rem 0;border-top:1px solid var(--border)}
+footer .w{display:flex;align-items:center;justify-content:space-between}
+footer p{font-size:.78rem;color:var(--text3)}
+footer a{color:var(--text2);text-decoration:none;font-size:.78rem;transition:color .2s}
+footer a:hover{color:var(--indigo)}
+.footer-links{display:flex;gap:1.5rem}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:2.2rem}
+.doc-cards{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr;gap:2rem}
+.steps::before{display:none}
+.checkbox-grid{grid-template-columns:1fr}
+.nav-r a:not(.nav-cta){display:none}
+footer .w{flex-direction:column;gap:.5rem;text-align:center}
+.trust-badges{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="w">
+<a href="/" class="nav-logo">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+PolicyBot
+</a>
+<div class="nav-r">
+<a href="#how-it-works">How It Works</a>
+<a href="#pricing">Pricing</a>
+<a href="#generate" class="nav-cta">Generate Now</a>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="w">
+<h1>Privacy Policy &amp; Terms of Service.<br><em>Done in 60 seconds.</em></h1>
+<p>Answer 8 questions. Pay $9. Get both documents instantly. No subscription, no lawyer, no waiting.</p>
+<a href="#generate" class="hero-cta">Generate My Policies &mdash; $9</a>
+<p class="hero-note">One-time payment. Instant delivery.</p>
+<div class="trust-badges">
+<span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> No Subscription</span>
+<span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Instant Delivery</span>
+<span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> GDPR &amp; CCPA Ready</span>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="sec sec-alt" id="how-it-works">
+<div class="w sec-center">
+<div class="sec-label">How It Works</div>
+<h2 class="sec-h">Three steps. Under a minute.</h2>
+<p class="sec-sub">No account, no onboarding, no calls.</p>
+<div class="steps reveal">
+<div class="step">
+<div class="step-num">1</div>
+<h3>Answer 8 Questions</h3>
+<p>Company name, data you collect, countries you serve. Takes 30 seconds.</p>
+</div>
+<div class="step">
+<div class="step-num">2</div>
+<h3>Pay $9</h3>
+<p>One-time payment via Stripe. No subscription, no recurring charges.</p>
+</div>
+<div class="step">
+<div class="step-num">3</div>
+<h3>Download Instantly</h3>
+<p>Get your privacy policy and terms of service as HTML and PDF. Also emailed to you.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="sec">
+<div class="w sec-center">
+<div class="sec-label">What You Get</div>
+<h2 class="sec-h">Two documents. Professionally written.</h2>
+<p class="sec-sub">Formatted, compliant, and ready to paste into your site.</p>
+<div class="doc-cards reveal">
+<div class="doc-card">
+<div class="doc-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><path d="M12 18v-6M9 15l3 3 3-3"/></svg>
+<h3>Privacy Policy</h3>
+</div>
+<p>Covers everything your users and regulators need to see.</p>
+<ul>
+<li>Data collection and usage disclosure</li>
+<li>Cookie and tracking technology policy</li>
+<li>Third-party service integrations</li>
+<li>User rights (access, deletion, opt-out)</li>
+<li>GDPR and CCPA compliance language</li>
+<li>Children's privacy (COPPA) if applicable</li>
+</ul>
+</div>
+<div class="doc-card">
+<div class="doc-card-head">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+<h3>Terms of Service</h3>
+</div>
+<p>Protects your business with clear, enforceable terms.</p>
+<ul>
+<li>Acceptable use policy</li>
+<li>Intellectual property rights</li>
+<li>Limitation of liability</li>
+<li>Account termination rules</li>
+<li>Dispute resolution clause</li>
+<li>Governing law and jurisdiction</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="generate">
+<div class="w">
+<div class="sec-center" style="margin-bottom:2rem">
+<div class="sec-label">Generate Your Policies</div>
+<h2 class="sec-h">Tell us about your product.</h2>
+<p class="sec-sub">Every answer shapes your policy. Takes about 30 seconds.</p>
+</div>
+<div class="form-wrap">
+<form id="policyForm">
+<input type="text" name="_hp_site" class="hp" tabindex="-1" autocomplete="off">
+
+<div class="form-group">
+<label>1. Company or app name</label>
+<input type="text" name="company_name" placeholder="Acme Inc." required>
+</div>
+
+<div class="form-group">
+<label>2. Website URL</label>
+<input type="url" name="website_url" placeholder="https://example.com" required>
+</div>
+
+<div class="form-group">
+<label>3. What type of product is this?</label>
+<select name="product_type" required>
+<option value="" disabled selected>Select one</option>
+<option value="Website">Website</option>
+<option value="Mobile App">Mobile App</option>
+<option value="SaaS">SaaS</option>
+<option value="E-commerce">E-commerce</option>
+<option value="Blog">Blog</option>
+<option value="Other">Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>4. What data do you collect?</label>
+<div class="hint">Select all that apply</div>
+<div class="checkbox-grid">
+<label><input type="checkbox" name="data_collected" value="Names"> Names</label>
+<label><input type="checkbox" name="data_collected" value="Emails"> Email addresses</label>
+<label><input type="checkbox" name="data_collected" value="Phone numbers"> Phone numbers</label>
+<label><input type="checkbox" name="data_collected" value="Payment info"> Payment info</label>
+<label><input type="checkbox" name="data_collected" value="Location data"> Location data</label>
+<label><input type="checkbox" name="data_collected" value="Cookies"> Cookies</label>
+<label><input type="checkbox" name="data_collected" value="Analytics"> Analytics data</label>
+<label><input type="checkbox" name="data_collected" value="IP addresses"> IP addresses</label>
+<label><input type="checkbox" name="data_collected" value="User content"> User-generated content</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>5. Do you use any third-party services?</label>
+<div class="hint">Select all that apply</div>
+<div class="checkbox-grid">
+<label><input type="checkbox" name="third_party" value="Google Analytics"> Google Analytics</label>
+<label><input type="checkbox" name="third_party" value="Stripe"> Stripe</label>
+<label><input type="checkbox" name="third_party" value="PayPal"> PayPal</label>
+<label><input type="checkbox" name="third_party" value="Mailchimp"> Mailchimp</label>
+<label><input type="checkbox" name="third_party" value="Facebook Pixel"> Facebook Pixel</label>
+<label><input type="checkbox" name="third_party" value="Intercom"> Intercom</label>
+<label><input type="checkbox" name="third_party" value="AWS"> AWS</label>
+<label><input type="checkbox" name="third_party" value="Other"> Other</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>6. Do you have users under 13 years old?</label>
+<div class="radio-row">
+<label><input type="radio" name="children" value="yes"> <span>Yes</span></label>
+<label><input type="radio" name="children" value="no" checked> <span>No</span></label>
+</div>
+</div>
+
+<div class="form-group">
+<label>7. What countries do you serve?</label>
+<div class="hint">Select all that apply</div>
+<div class="checkbox-grid">
+<label><input type="checkbox" name="countries" value="United States"> United States</label>
+<label><input type="checkbox" name="countries" value="European Union"> European Union</label>
+<label><input type="checkbox" name="countries" value="United Kingdom"> United Kingdom</label>
+<label><input type="checkbox" name="countries" value="Canada"> Canada</label>
+<label><input type="checkbox" name="countries" value="Australia"> Australia</label>
+<label><input type="checkbox" name="countries" value="Worldwide"> Worldwide</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>8. Contact email for privacy inquiries</label>
+<input type="email" name="privacy_email" placeholder="privacy@example.com" required>
+</div>
+
+<div class="form-divider"></div>
+
+<div class="form-group">
+<label>Where should we send the documents?</label>
+<input type="email" name="delivery_email" placeholder="you@email.com" required>
+</div>
+
+<button type="submit" class="form-submit" id="submitBtn">Generate &amp; Pay &mdash; $9</button>
+<div class="form-secure">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+Secure payment via Stripe. Your answers are never stored.
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="pricing">
+<div class="w sec-center">
+<div class="sec-label">Pricing</div>
+<h2 class="sec-h">One price. No tricks.</h2>
+<p class="sec-sub">Pay once, own your policies forever.</p>
+<div class="price-box reveal">
+<div class="price-amount"><sup>$</sup>9</div>
+<div class="price-desc">One-time payment</div>
+<ul>
+<li>Privacy Policy (HTML + PDF)</li>
+<li>Terms of Service (HTML + PDF)</li>
+<li>GDPR &amp; CCPA compliance language</li>
+<li>Instant download + email delivery</li>
+<li>COPPA language if needed</li>
+<li>No subscription ever</li>
+</ul>
+<a href="#generate" class="hero-cta" style="display:block;text-align:center">Generate My Policies</a>
+<div class="price-compare">Termly charges $12/month. GetTerms charges $8/month. You pay $9 once.</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-alt" id="faq">
+<div class="w sec-center">
+<div class="sec-label">FAQ</div>
+<h2 class="sec-h">Common questions</h2>
+<p class="sec-sub">If yours is not here, email contact@stromation.com.</p>
+<div class="faq-list reveal">
+<div class="faq-item">
+<button class="faq-q">Are these legally binding?</button>
+<div class="faq-a"><div class="faq-a-inner">The generated documents follow standard legal templates used across the industry. They are suitable for most websites and apps. For complex regulatory requirements or high-risk industries, we recommend having an attorney review the output.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Can I edit the policies after?</button>
+<div class="faq-a"><div class="faq-a-inner">Yes. You receive both HTML and PDF versions. The HTML is plain text you can edit freely before pasting into your site. You own the content completely.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Do you store my information?</button>
+<div class="faq-a"><div class="faq-a-inner">Your form answers are used only to generate your documents and are not stored after delivery. We keep your email for delivery purposes only.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q">What if I need changes later?</button>
+<div class="faq-a"><div class="faq-a-inner">You can edit the HTML yourself at any time. If your product changes significantly and you need a fresh generation, you can purchase again for $9.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Is this GDPR and CCPA compliant?</button>
+<div class="faq-a"><div class="faq-a-inner">Yes. The generated privacy policy includes GDPR-required disclosures (data subject rights, lawful basis, DPO contact) and CCPA-required disclosures (right to know, right to delete, opt-out) when you select the relevant countries.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q">Can I use this for multiple sites?</button>
+<div class="faq-a"><div class="faq-a-inner">Each purchase generates policies for one site or app. If you run multiple products that collect different data, we recommend generating separate policies for each. Each generation is $9.</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="w">
+<h2>Your app needs a privacy policy.<br>Get one now.</h2>
+<p>60 seconds. $9. Done forever.</p>
+<a href="#generate" class="hero-cta">Generate My Policies &mdash; $9</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="w">
+<p>PolicyBot by <a href="https://www.stromation.com">Stromation</a></p>
+<div class="footer-links">
+<a href="mailto:contact@stromation.com">contact@stromation.com</a>
+<a href="https://www.stromation.com/privacy.html">Privacy</a>
+<a href="https://www.stromation.com/terms.html">Terms</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function() {
+    // Scroll reveal
+    var reveals = document.querySelectorAll('.reveal');
+    if (reveals.length) {
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function(el) { obs.observe(el); });
+    }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var item = btn.parentElement;
+            var wasActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(function(fi) { fi.classList.remove('active'); });
+            if (!wasActive) item.classList.add('active');
+        });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            var target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                var offset = 70;
+                window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Form submission
+    var form = document.getElementById('policyForm');
+    var formLoadedAt = Date.now();
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var hp = new FormData(this).get('_hp_site');
+        if (hp) return;
+        if (Date.now() - formLoadedAt < 3000) return;
+
+        var btn = document.getElementById('submitBtn');
+        btn.disabled = true;
+        btn.textContent = 'Creating checkout...';
+
+        var dataCollected = [];
+        form.querySelectorAll('input[name="data_collected"]:checked').forEach(function(cb) { dataCollected.push(cb.value); });
+        var thirdParty = [];
+        form.querySelectorAll('input[name="third_party"]:checked').forEach(function(cb) { thirdParty.push(cb.value); });
+        var countries = [];
+        form.querySelectorAll('input[name="countries"]:checked').forEach(function(cb) { countries.push(cb.value); });
+
+        var payload = {
+            company_name: form.company_name.value.trim(),
+            website_url: form.website_url.value.trim(),
+            product_type: form.product_type.value,
+            data_collected: dataCollected.join(', '),
+            third_party_services: thirdParty.join(', '),
+            children_under_13: form.children.value,
+            countries: countries.join(', '),
+            privacy_email: form.privacy_email.value.trim(),
+            delivery_email: form.delivery_email.value.trim(),
+            source: 'policybot_landing'
+        };
+
+        fetch('https://n8n.stromation.com/webhook/policybot-generate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data.checkout_url) {
+                gtag('event', 'begin_checkout', { event_category: 'policybot', value: 9 });
+                window.location.href = data.checkout_url;
+            } else if (data.error) {
+                btn.textContent = data.error;
+                setTimeout(function() { btn.textContent = 'Generate & Pay — $9'; btn.disabled = false; }, 3000);
+            }
+        })
+        .catch(function() {
+            btn.textContent = 'Error. Try again.';
+            setTimeout(function() { btn.textContent = 'Generate & Pay — $9'; btn.disabled = false; }, 3000);
+        });
+    });
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PolicyBot","applicationCategory":"BusinessApplication","description":"Generate a privacy policy and terms of service for your app or website in 60 seconds.","url":"https://policy.stromation.com","offers":{"@type":"Offer","price":"9","priceCurrency":"USD","description":"Privacy Policy + Terms of Service — one-time payment"},"provider":{"@type":"Organization","name":"Stromation","url":"https://www.stromation.com"}}
+</script>
+</body>
+</html>
