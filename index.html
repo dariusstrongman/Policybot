@@ -286,7 +286,7 @@ PolicyBot
 
 <div class="form-group">
 <label>2. Website URL</label>
-<input type="url" name="website_url" placeholder="https://example.com" required>
+<input type="text" name="website_url" placeholder="example.com" required>
 </div>
 
 <div class="form-group">
@@ -501,6 +501,28 @@ Secure payment via Stripe. Your answers are never stored.
         var hp = new FormData(this).get('_hp_site');
         if (hp) return;
         if (Date.now() - formLoadedAt < 3000) return;
+
+        // Auto-fix URL if missing protocol
+        var urlField = form.website_url;
+        var urlVal = urlField.value.trim();
+        if (urlVal && !urlVal.match(/^https?:\/\//)) {
+            urlField.value = 'https://' + urlVal;
+        }
+
+        // Validate required fields and highlight errors
+        var firstError = null;
+        form.querySelectorAll('[required]').forEach(function(f) {
+            f.style.borderColor = '';
+            if (!f.value || !f.value.trim()) {
+                f.style.borderColor = '#EF4444';
+                if (!firstError) firstError = f;
+            }
+        });
+        if (firstError) {
+            firstError.focus();
+            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
 
         var btn = document.getElementById('submitBtn');
         btn.disabled = true;
