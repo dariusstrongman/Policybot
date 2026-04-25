@@ -116,6 +116,12 @@ nav .w{display:flex;align-items:center;justify-content:space-between}
 .form-secure{text-align:center;font-size:.78rem;color:var(--text3);margin-top:.75rem;display:flex;align-items:center;justify-content:center;gap:.3rem}
 .form-secure svg{width:14px;height:14px}
 .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.consent-box{background:#FEF3C7;border:1px solid #F59E0B;border-radius:8px;padding:.9rem 1rem;margin-bottom:1.25rem}
+.consent-label{display:flex;align-items:flex-start;gap:.65rem;cursor:pointer;font-size:.83rem;color:#7C2D12;line-height:1.55;margin:0}
+.consent-label input[type="checkbox"]{flex-shrink:0;margin-top:3px;width:16px;height:16px;accent-color:#D97706;cursor:pointer}
+.consent-label strong{color:#7C2D12}
+.consent-label a{color:var(--indigo);text-decoration:underline;text-underline-offset:2px;font-weight:600}
+.consent-label a:hover{color:var(--indigo-hover)}
 
 /* PRICING */
 .price-box{max-width:440px;margin:0 auto;background:#fff;border:2px solid var(--indigo);border-radius:var(--radius);padding:2.5rem;text-align:center;box-shadow:var(--shadow-lg);position:relative}
@@ -191,7 +197,7 @@ PolicyBot
 <h1>Privacy Policy &amp; Terms of Service.<br><em>Done in 60 seconds.</em></h1>
 <p>Answer 8 questions. Pay $9. Get both documents instantly. No subscription, no lawyer, no waiting.</p>
 <a href="#generate" class="hero-cta">Generate My Policies &mdash; $9</a>
-<p class="hero-note">One-time payment. Instant delivery.</p>
+<p class="hero-note">One-time payment. Instant delivery. <a href="disclaimer.html" style="color:var(--text2);text-decoration:underline;text-underline-offset:2px;">Templates only &mdash; not legal advice.</a></p>
 <div class="trust-badges">
 <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> No Subscription</span>
 <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Instant Delivery</span>
@@ -366,6 +372,13 @@ PolicyBot
 <input type="email" name="delivery_email" placeholder="you@email.com" required>
 </div>
 
+<div class="consent-box">
+<label class="consent-label">
+<input type="checkbox" name="consent" id="consentBox" required>
+<span>I understand PolicyBot generates document <strong>templates</strong>, not legal advice. I am responsible for reviewing the output, ensuring my actual practices match what the policies state, and consulting an attorney for jurisdiction-specific or high-risk situations. <a href="disclaimer.html" target="_blank" rel="noopener">Read full disclaimer</a>.</span>
+</label>
+</div>
+
 <button type="submit" class="form-submit" id="submitBtn">Generate &amp; Pay &mdash; $9</button>
 <div class="form-secure">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
@@ -448,6 +461,7 @@ Secure payment via Stripe. Your answers are never stored.
 <div class="w">
 <p>PolicyBot by <a href="https://www.stromation.com">Stromation</a></p>
 <div class="footer-links">
+<a href="disclaimer.html">Disclaimer</a>
 <a href="mailto:contact@stromation.com">contact@stromation.com</a>
 <a href="https://www.stromation.com/privacy.html">Privacy</a>
 <a href="https://www.stromation.com/terms.html">Terms</a>
@@ -501,6 +515,23 @@ Secure payment via Stripe. Your answers are never stored.
         var hp = new FormData(this).get('_hp_site');
         if (hp) return;
         if (Date.now() - formLoadedAt < 3000) return;
+
+        // Require explicit acknowledgement that templates are not legal advice
+        var consentEl = document.getElementById('consentBox');
+        if (consentEl && !consentEl.checked) {
+            consentEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            consentEl.focus();
+            var consentBox = consentEl.closest('.consent-box');
+            if (consentBox) {
+                consentBox.style.borderColor = '#EF4444';
+                consentBox.style.background = '#FEF2F2';
+                setTimeout(function() {
+                    consentBox.style.borderColor = '#F59E0B';
+                    consentBox.style.background = '#FEF3C7';
+                }, 2500);
+            }
+            return;
+        }
 
         // Auto-fix URL if missing protocol
         var urlField = form.website_url;
