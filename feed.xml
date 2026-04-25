@@ -6,5 +6,26 @@
   <description>Guides on privacy policies, terms of service, GDPR, CCPA, and legal compliance for apps and websites.</description>
   <language>en-us</language>
   <atom:link href="https://policy.stromation.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Why Every Website Needs a Privacy Policy in 2026</title>
+    <link>https://policy.stromation.com/blog/why-every-website-needs-a-privacy-policy-in-2026.html</link>
+    <description>In today&#x27;s digital age, data privacy is more critical than ever. As we move into 2026, the importance of having a robust privacy policy for your website cannot ...</description>
+    <pubDate>Sat, 25 Apr 2026 08:18:06 +0000</pubDate>
+    <guid>https://policy.stromation.com/blog/why-every-website-needs-a-privacy-policy-in-2026.html</guid>
+  </item>
+  <item>
+    <title>GDPR vs CCPA: What Small Business Owners Need to Know</title>
+    <link>https://policy.stromation.com/blog/gdpr-vs-ccpa-what-small-business-owners-need-to-know.html</link>
+    <description>In today’s digital age, protecting user data and maintaining privacy is not just a legal obligation but a necessity for building trust with your customers. Whet...</description>
+    <pubDate>Sat, 25 Apr 2026 08:18:06 +0000</pubDate>
+    <guid>https://policy.stromation.com/blog/gdpr-vs-ccpa-what-small-business-owners-need-to-know.html</guid>
+  </item>
+  <item>
+    <title>Privacy Policy Mistakes That Can Get You Fined</title>
+    <link>https://policy.stromation.com/blog/privacy-policy-mistakes-that-can-get-you-fined.html</link>
+    <description>In today’s digital age, privacy policies are more than just a formality—they are a legal necessity. As a small business owner, indie hacker, or app developer, y...</description>
+    <pubDate>Sat, 25 Apr 2026 08:18:06 +0000</pubDate>
+    <guid>https://policy.stromation.com/blog/privacy-policy-mistakes-that-can-get-you-fined.html</guid>
+  </item>
 </channel>
 </rss>

@@ -3,4 +3,7 @@
   <url><loc>https://policy.stromation.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://policy.stromation.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://policy.stromation.com/disclaimer.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://policy.stromation.com/blog/why-every-website-needs-a-privacy-policy-in-2026.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://policy.stromation.com/blog/gdpr-vs-ccpa-what-small-business-owners-need-to-know.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://policy.stromation.com/blog/privacy-policy-mistakes-that-can-get-you-fined.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
