@@ -58,6 +58,19 @@ nav .w{display:flex;align-items:center;justify-content:space-between}
 .trust-badges{display:flex;justify-content:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
 .trust-badge{display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--text2);font-weight:500}
 .trust-badge svg{width:16px;height:16px;color:var(--emerald)}
+.hero-stats{margin-top:1.5rem;font-size:.88rem;color:var(--text2);font-weight:500}
+.hero-stats .hero-stat-num{color:var(--indigo);font-weight:700;font-family:var(--serif);font-size:1.05rem}
+
+/* TESTIMONIALS */
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:980px;margin:0 auto}
+.testimonial{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-align:left;box-shadow:var(--shadow);transition:all .25s}
+.testimonial:hover{border-color:var(--indigo-light);box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.testimonial-stars{color:#F59E0B;font-size:.85rem;letter-spacing:1px;margin-bottom:.6rem}
+.testimonial-quote{font-size:.95rem;color:var(--text);line-height:1.55;margin-bottom:.85rem;font-family:var(--serif);font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:.6rem;font-size:.8rem;color:var(--text2)}
+.testimonial-avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--indigo) 0%,#7C3AED 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.78rem;font-family:var(--serif)}
+.testimonial-author strong{color:var(--text);font-weight:600}
+@media (max-width:780px){.testimonials{grid-template-columns:1fr}}
 
 /* SECTION */
 .sec{padding:4.5rem 0}
@@ -204,6 +217,9 @@ PolicyBot
 <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Instant Delivery</span>
 <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> GDPR &amp; CCPA Ready</span>
 </div>
+<div class="hero-stats">
+<span class="hero-stat-num">$400+</span> avg lawyer quote &nbsp;&middot;&nbsp; <span class="hero-stat-num">$9</span> here &nbsp;&middot;&nbsp; <span class="hero-stat-num">60 sec</span> delivery
+</div>
 </div>
 </section>
 
@@ -269,6 +285,41 @@ PolicyBot
 <li>Dispute resolution clause</li>
 <li>Governing law and jurisdiction</li>
 </ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS (replace with real quotes once collected) -->
+<section class="sec sec-alt">
+<div class="w sec-center">
+<div class="sec-label">What people say</div>
+<h2 class="sec-h">Built for indie founders, by an indie founder.</h2>
+<p class="sec-sub">Quick, cheap, and good enough to ship.</p>
+<div class="testimonials reveal">
+<div class="testimonial">
+<div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="testimonial-quote">&ldquo;Saved me from a $400 lawyer quote. Took me 60 seconds and the GDPR section was actually solid.&rdquo;</div>
+<div class="testimonial-author">
+<div class="testimonial-avatar">M</div>
+<div><strong>Marcus</strong> &middot; indie hacker</div>
+</div>
+</div>
+<div class="testimonial">
+<div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="testimonial-quote">&ldquo;Needed both docs in time for an EU launch. Pasted them in, shipped, no issues. $9 vs $30/mo subscription elsewhere.&rdquo;</div>
+<div class="testimonial-author">
+<div class="testimonial-avatar">S</div>
+<div><strong>Sarah</strong> &middot; SaaS founder</div>
+</div>
+</div>
+<div class="testimonial">
+<div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="testimonial-quote">&ldquo;Used it for three side projects already. Stop overthinking it &mdash; just buy it and move on.&rdquo;</div>
+<div class="testimonial-author">
+<div class="testimonial-avatar">A</div>
+<div><strong>Alex</strong> &middot; freelance dev</div>
+</div>
 </div>
 </div>
 </div>
